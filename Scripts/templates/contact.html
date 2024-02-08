@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+    {% block head %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    {% endblock %}
+
+</head>
+
+<body>
+	{% extends "parent.html" %}
+	{% block content %}
+
+		
+	  <h2> Kontakt </h2>
+	  <p><strong>email:</strong>  sslusarczyk87@gmail.com</p>
+	  <p><strong>telefon:</strong> +1 864-325-3216</p>
+	  <script src="script.js"></script>
+	  <p><strong>Wyslij wiadomosc</strong></p>
+	  <form action="" method="POST">
+            <label>First Name</label>
+            <input name="firstname"/>
+            <input type="submit"/>
+      </form>
+    </body>
+		
+	  </form>
+	{% endblock %}
+</body>
+
+</html>
